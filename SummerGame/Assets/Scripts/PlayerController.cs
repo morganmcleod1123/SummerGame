@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     public int extraJumps;
     private int currentJumps;
 
-
     private Rigidbody2D rigidbody2D;
     void Start()
     {
