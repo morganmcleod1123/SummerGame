@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45c4a5c24a6cae4ea8ee1912bab7a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwAttack: 0.5
+  startTimeBtwAttack: 0.3
   attackPosition: {fileID: 2040481836}
   whatIsEnemy:
     serializedVersion: 2

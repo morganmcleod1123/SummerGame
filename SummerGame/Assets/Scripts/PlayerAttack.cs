@@ -13,10 +13,14 @@ public class PlayerAttack : MonoBehaviour
     public float attackHitboxSize;
     public int damage;
 
+    private void Start()
+    {
+        timeBtwAttack = startTimeBtwAttack;
+    }
     void Update()
     {
-       // if(timeBtwAttack <= 0)
-       // {
+        if(timeBtwAttack <= 0)
+        {
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Shwing!");
@@ -25,13 +29,12 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
                 }
+                timeBtwAttack = startTimeBtwAttack;
             }
-
-           // timeBtwAttack = startTimeBtwAttack;
-       // } else
-        //{
-      //      timeBtwAttack -= Time.deltaTime;
-       // }
+        } else
+           {
+               timeBtwAttack -= Time.deltaTime;
+           }
     }
     private void OnDrawGizmosSelected()
     {
