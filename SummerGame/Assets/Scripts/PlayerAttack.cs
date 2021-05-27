@@ -35,6 +35,12 @@ public class PlayerAttack : MonoBehaviour
            {
                timeBtwAttack -= Time.deltaTime;
            }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            //Check to see if you have enough mana
+            //Reduce the Mana by mana cost
+            //Shoot Ranged Attack
+        }
     }
     private void OnDrawGizmosSelected()
     {

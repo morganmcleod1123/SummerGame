@@ -10,8 +10,11 @@ public class Enemy : MonoBehaviour
     private float dazedTime;
     public float hitstun;
 
+    private Rigidbody2D rigidbody2D;
+
     void Start()
     {
+        rigidbody2D = GetComponent<Rigidbody2D>();
         speed = startSpeed;
     }
 
@@ -35,6 +38,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         dazedTime = hitstun;
+        //rigidbody2D.AddForce();
         health -= damage;
         Debug.Log("Took " + damage + " damage");
     }
