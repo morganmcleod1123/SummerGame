@@ -10,12 +10,22 @@ public class AIpatrol : MonoBehaviour
     public float walkSpeed;
     public bool activeTurn;
     public Transform groundCheckPosition;
-    public LayerMask groundLayer; 
+    public LayerMask groundLayer;
+    public bool enemyFacingRight = true;
+
+    [SerializeField]
+    Transform player;
+
+    [SerializeField]
+    float detectRange;
+
+    public float followSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-        activePatrol = true;
+        rigidb = GetComponent<Rigidbody2D>();
+        activePatrol = false;
     }
 
     // Update is called once per frame
@@ -24,6 +34,20 @@ public class AIpatrol : MonoBehaviour
         if (activePatrol)
         {
             Patrol();
+        }
+
+        //check distance from player
+        float playerDistance = Vector2.Distance(transform.position, player.position);
+        //print("distance to player " + playerDistance);
+        if (playerDistance < detectRange)
+        {
+            //detection and follow
+            Chase();
+        }
+        else
+        {
+            //stop following
+            StopChase();
         }
     }
 
@@ -50,5 +74,35 @@ public class AIpatrol : MonoBehaviour
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
         walkSpeed *= -1;
         activePatrol = true;
+    }
+
+    void Chase()
+    {
+
+        if(transform.position.x < player.position.x)
+        {
+            //enemy is left of the player
+            rigidb.velocity = new Vector2(followSpeed, 0);
+            if (!enemyFacingRight)
+            {
+                transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+                enemyFacingRight = true;
+            }
+        }
+        else if (transform.position.x > player.position.x)
+        {
+            //enemy is right of the player
+            rigidb.velocity = new Vector2(-followSpeed, 0);
+            if (enemyFacingRight)
+            {
+                transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+                enemyFacingRight = false;
+            }
+        }
+    }
+
+    void StopChase()
+    {
+        rigidb.velocity = new Vector2(0, 0);
     }
 }
