@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float projectileSpeed;
+    public int damage;
     public float lifeTime;
-    private Rigidbody2D rigidbody2D;
 
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
-        rigidbody2D.velocity = transform.right * projectileSpeed;
         Invoke("DestroyProjectile", lifeTime);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+            //explode
+            Destroy(gameObject);
+        }
     }
 
     void DestroyProjectile()
     {
-        //Destroy Particle Effects
         Destroy(gameObject);
     }
 }

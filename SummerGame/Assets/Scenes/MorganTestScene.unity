@@ -640,9 +640,9 @@ GameObject:
   - component: {fileID: 803001230}
   - component: {fileID: 803001233}
   - component: {fileID: 803001234}
+  - component: {fileID: 803001237}
   - component: {fileID: 803001235}
   - component: {fileID: 803001236}
-  - component: {fileID: 803001237}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -835,7 +835,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 6091311347086317599, guid: c429ddb905a6b814c802de2925e6a3c9, type: 3}
-  firePosition: {fileID: 2040481836}
+  velocity: {x: 8, y: 0}
+  offset: {x: 0.4, y: 0.1}
   fireBallManaCost: 5
 --- !u!1 &1312834418
 GameObject:
