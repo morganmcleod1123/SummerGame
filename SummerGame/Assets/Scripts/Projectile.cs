@@ -11,18 +11,19 @@ public class Projectile : MonoBehaviour
     {
         Invoke("DestroyProjectile", lifeTime);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    void DestroyProjectile()
     {
-        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
             //explode
             Destroy(gameObject);
         }
-    }
-
-    void DestroyProjectile()
-    {
-        Destroy(gameObject);
     }
 }

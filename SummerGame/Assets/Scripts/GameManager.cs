@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -55,5 +56,14 @@ public class GameManager : MonoBehaviour
     public void decreaseHealth(float damage)
     {
         currentPlayerHealth -= damage;
+    }
+    //SCENE MANAGEMENT
+    public void nextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void transitionScene(int sceneToLoad)
+    {
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
