@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("You have no mana");
         return false;
     }
+    //PLAYER STAT MANAGEMENT
     public void decreaseMana(float manaCost)
     {
         currentPlayerMana -= manaCost;
@@ -56,6 +57,14 @@ public class GameManager : MonoBehaviour
     public void decreaseHealth(float damage)
     {
         currentPlayerHealth -= damage;
+    }
+    public void increaseMana(float manaCost)
+    {
+        currentPlayerMana += manaCost;
+    }
+    public void increaseHealth(float damage)
+    {
+        currentPlayerHealth += damage;
     }
     //SCENE MANAGEMENT
     public void nextScene()
