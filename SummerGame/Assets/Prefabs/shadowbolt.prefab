@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7452460514182687624}
   - component: {fileID: -6662657231075645182}
   - component: {fileID: -2493993965808865631}
-  - component: {fileID: 1515218903275382619}
   - component: {fileID: 1182608581154445615}
   m_Layer: 0
   m_Name: shadowbolt
@@ -124,20 +123,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.16, y: 0.08}
   m_Direction: 1
---- !u!114 &1515218903275382619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6091311347086317599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7891ffac3b1a1a54dbf65f38bc47ee87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  lifeTime: 2
 --- !u!95 &1182608581154445615
 Animator:
   serializedVersion: 3

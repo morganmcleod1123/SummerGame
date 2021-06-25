@@ -18,15 +18,33 @@ public class PlayerController : MonoBehaviour
     public int extraJumps;
     private int currentJumps;
 
+    private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidbody2D;
+    Animator animator;
+    private float timePassed;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
         currentJumps = extraJumps;
         rigidbody2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        timePassed = 0;
     }
 
     void Update()
     {
+        animator.SetBool("FacingRight", facingRight);
+        animator.SetBool("IsGrounded", isGrounded);
+        animator.SetFloat("Horizontal", moveInput);
+        animator.SetFloat("Vertical", rigidbody2D.velocity.y);
+        if (!facingRight)
+        {
+            spriteRenderer.flipX = true;
+        } else
+        {
+            spriteRenderer.flipX = false;
+        }
         if(isGrounded)
         {
             currentJumps = extraJumps;

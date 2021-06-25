@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public int health;
-    private float speed;
-    public float startSpeed;
     private float dazedTime;
     public float hitstun;
 
@@ -15,30 +13,30 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        speed = startSpeed;
+        dazedTime = 0;
     }
 
     void Update()
     {
-        if(dazedTime <= 0)
+        if(dazedTime > 0)
         {
-            speed = startSpeed;
-        } else
+            rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX;
+        } 
+        else
         {
-            speed = 0;
-            dazedTime -= Time.deltaTime;
+            rigidbody2D.constraints = RigidbodyConstraints2D.None;
+            rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         if(health <= 0)
         {
             Destroy(gameObject);
         }
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        dazedTime -= Time.deltaTime;
     }
 
     public void TakeDamage(int damage)
     {
         dazedTime = hitstun;
-        //rigidbody2D.AddForce();
         health -= damage;
         Debug.Log("Took " + damage + " damage");
     }

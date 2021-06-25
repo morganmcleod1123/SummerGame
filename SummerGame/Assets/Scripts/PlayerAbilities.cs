@@ -46,7 +46,7 @@ public class PlayerAbilities : MonoBehaviour
                         Scaler.x *= -1;
                         fireball.transform.localScale = Scaler;
                 }
-                
+                //Animator.setBool("Shadowbolt", true);
                 gm.decreaseMana(fireBallManaCost);
             }
         }

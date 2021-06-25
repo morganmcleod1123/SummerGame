@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackHitboxSize, whatIsEnemy);
                 for(int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyHealth>().TakeDamage(damage);
                 }
                 timeBtwAttack = startTimeBtwAttack;
             }
@@ -35,12 +35,6 @@ public class PlayerAttack : MonoBehaviour
            {
                timeBtwAttack -= Time.deltaTime;
            }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            //Check to see if you have enough mana
-            //Reduce the Mana by mana cost
-            //Shoot Ranged Attack
-        }
     }
     private void OnDrawGizmosSelected()
     {
