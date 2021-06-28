@@ -7,11 +7,14 @@ public class PlayerAbilities : MonoBehaviour
     private GameManager gm;
     private Rigidbody2D rigidbody2D;
     public GameObject projectile;
+    Animator animator;
     public Vector2 velocity;
     public Vector2 offset = new Vector2(0.4f, 0.1f);
     bool faceRight;
 
-    public float fireBallManaCost;
+    public float shadowBoltManaCost;
+    public float shadowStartLag = 1.0f;
+    public float shadowEndLag = 0.3f;
     public float teleportManaCost;
 
     public GameObject teleportPos;
@@ -21,13 +24,15 @@ public class PlayerAbilities : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         isDashing = false;
         gm = GameManager.Instance;
     }
     void Update()
     {
-        if(transform.localScale.x > 0)
+        animator.SetBool("FacingRight", faceRight);
+        if (transform.localScale.x > 0)
         {
             faceRight = true;
         } else
@@ -36,18 +41,9 @@ public class PlayerAbilities : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (GameManager.Instance.enoughMana(fireBallManaCost))
+            if (GameManager.Instance.enoughMana(shadowBoltManaCost))
             {
-                GameObject fireball = (GameObject) Instantiate(projectile, (Vector2)transform.position + offset * transform.localScale.x, Quaternion.identity);
-                fireball.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x * transform.localScale.x, velocity.y);
-                if (!faceRight)
-                {
-                        Vector3 Scaler = fireball.transform.localScale;
-                        Scaler.x *= -1;
-                        fireball.transform.localScale = Scaler;
-                }
-                //Animator.setBool("Shadowbolt", true);
-                gm.decreaseMana(fireBallManaCost);
+                StartCoroutine("Shadowbolt");
             }
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -68,6 +64,31 @@ public class PlayerAbilities : MonoBehaviour
             Debug.Log("Left Dash");
             StartCoroutine(Dash(-1f));
         }
+    }
+    IEnumerator Shadowbolt()
+    {
+        animator.SetBool("Shadowbolt", true);
+        PlayerController playerController = GetComponent<PlayerController>();
+        playerController.canMove = false;
+        yield return new WaitForSeconds(shadowStartLag);
+        if (faceRight)
+        {
+            GameObject fireball = (GameObject)Instantiate(projectile, (Vector2)transform.position + offset, Quaternion.identity);
+            fireball.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x * transform.localScale.x, velocity.y);
+        }
+        if (!faceRight)
+        {
+            Vector2 leftOffset = new Vector2(-offset.x, offset.y);
+            GameObject fireball = (GameObject)Instantiate(projectile, (Vector2)transform.position + leftOffset, Quaternion.identity);
+            fireball.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x * transform.localScale.x, velocity.y);
+            Vector3 Scaler = fireball.transform.localScale;
+            Scaler.x *= -1;
+            fireball.transform.localScale = Scaler;
+        }
+        yield return new WaitForSeconds(shadowEndLag);
+        gm.decreaseMana(shadowBoltManaCost);
+        playerController.canMove = true;
+        animator.SetBool("Shadowbolt", false);
     }
     IEnumerator Dash(float direction)
     {

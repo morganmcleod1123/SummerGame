@@ -212,7 +212,7 @@ Animator:
   m_GameObject: {fileID: 7215182823858774718}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bec71db7712e06047a5b690ca7f44501, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5ff4596c80a072c4fafa4f80a2b7188a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -260,9 +260,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 6091311347086317599, guid: c429ddb905a6b814c802de2925e6a3c9, type: 3}
-  velocity: {x: 8, y: 0}
-  offset: {x: 0.4, y: 0.1}
-  fireBallManaCost: 5
+  velocity: {x: 16, y: 0}
+  offset: {x: 0.1, y: 0.23}
+  shadowBoltManaCost: 0
+  shadowStartLag: 0.45
+  shadowEndLag: 0.45
   teleportManaCost: 5
   teleportPos: {fileID: 266225619}
   dashDistance: 15
@@ -279,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  canMove: 1
   groundCheck: {fileID: 7215182823805844322}
   checkRadius: 0.5
   whatIsGround:

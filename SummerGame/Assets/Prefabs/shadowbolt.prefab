@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6662657231075645182}
   - component: {fileID: -2493993965808865631}
   - component: {fileID: 1182608581154445615}
+  - component: {fileID: 7073312699478458650}
   m_Layer: 0
   m_Name: shadowbolt
   m_TagString: Untagged
@@ -142,6 +143,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7073312699478458650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091311347086317599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcb5f1f53405c740a424676c6f9a8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  lifeTime: 1.5
 --- !u!1001 &8159032759621093373
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight = true;
 
+    public bool canMove = true;
     private bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
@@ -21,7 +22,6 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidbody2D;
     Animator animator;
-    private float timePassed;
 
     void Start()
     {
@@ -29,15 +29,13 @@ public class PlayerController : MonoBehaviour
         currentJumps = extraJumps;
         rigidbody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        timePassed = 0;
     }
 
     void Update()
     {
         animator.SetBool("FacingRight", facingRight);
         animator.SetBool("IsGrounded", isGrounded);
-        animator.SetFloat("Horizontal", moveInput);
-        animator.SetFloat("Vertical", rigidbody2D.velocity.y);
+        animator.SetBool("CanMove", canMove);
         if (!facingRight)
         {
             spriteRenderer.flipX = true;
@@ -49,14 +47,23 @@ public class PlayerController : MonoBehaviour
         {
             currentJumps = extraJumps;
         }
-
-        if (Input.GetKeyDown(KeyCode.Space) && currentJumps > 0)
+        if (canMove)
         {
-            rigidbody2D.velocity = Vector2.up * jumpForce;
-            currentJumps--;
-        } else if (Input.GetKeyDown(KeyCode.Space) && currentJumps == 0 && isGrounded)
+            animator.SetFloat("Horizontal", moveInput);
+            animator.SetFloat("Vertical", rigidbody2D.velocity.y);
+            if (Input.GetKeyDown(KeyCode.Space) && currentJumps > 0)
+            {
+                rigidbody2D.velocity = Vector2.up * jumpForce;
+                currentJumps--;
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && currentJumps == 0 && isGrounded)
+            {
+                rigidbody2D.velocity = Vector2.up * jumpForce;
+            }
+        } else
         {
-            rigidbody2D.velocity = Vector2.up * jumpForce;
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 0);
         }
     }
 
@@ -65,13 +72,16 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         moveInput = Input.GetAxisRaw("Horizontal");
-        rigidbody2D.velocity = new Vector2(moveInput * moveSpeed, rigidbody2D.velocity.y);
-
-        if (!facingRight && moveInput > 0)
+        if (canMove) { rigidbody2D.velocity = new Vector2(moveInput * moveSpeed, rigidbody2D.velocity.y); }
+        else
+        {
+            rigidbody2D.velocity = new Vector2(0, 0);
+        }
+        if (!facingRight && moveInput > 0 && canMove)
         {
             Flip();
         }
-        else if (facingRight && moveInput < 0)
+        else if (facingRight && moveInput < 0 && canMove)
         {
             Flip();
         }
