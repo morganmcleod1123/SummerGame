@@ -29,6 +29,7 @@ public class PlayerAbilities : MonoBehaviour
         isDashing = false;
         gm = GameManager.Instance;
     }
+
     void Update()
     {
         animator.SetBool("FacingRight", faceRight);
@@ -65,12 +66,18 @@ public class PlayerAbilities : MonoBehaviour
             StartCoroutine(Dash(-1f));
         }
     }
+
     IEnumerator Shadowbolt()
     {
+        // START ANIMATION
         animator.SetBool("Shadowbolt", true);
+
+        // FREEZE THE PLAYER
         PlayerController playerController = GetComponent<PlayerController>();
         playerController.canMove = false;
         yield return new WaitForSeconds(shadowStartLag);
+
+        // FIRE THE BOLT RIGHT OR LEFT
         if (faceRight)
         {
             GameObject fireball = (GameObject)Instantiate(projectile, (Vector2)transform.position + offset, Quaternion.identity);
@@ -90,6 +97,7 @@ public class PlayerAbilities : MonoBehaviour
         playerController.canMove = true;
         animator.SetBool("Shadowbolt", false);
     }
+
     IEnumerator Dash(float direction)
     {
         Debug.Log("Inside the Dash");
