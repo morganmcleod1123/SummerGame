@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PlayerAbilities : MonoBehaviour
 {
-    private GameManager gm;
-    private Rigidbody2D rigidbody2D;
     public GameObject projectile;
-    Animator animator;
     public Vector2 velocity;
     public Vector2 offset = new Vector2(0.4f, 0.1f);
     bool faceRight;
@@ -20,13 +17,18 @@ public class PlayerAbilities : MonoBehaviour
     public GameObject teleportPos;
     private int dashCount;
     public float dashDistance = 15f;
-    bool isDashing;
+    public bool isDashing;
+
+    private PlayerController playerController;
+    private Rigidbody2D rigidbody2D;
+    private GameManager gm;
+    private Animator animator;
 
     private void Start()
     {
+        playerController = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
-        isDashing = false;
         gm = GameManager.Instance;
     }
 
@@ -40,7 +42,7 @@ public class PlayerAbilities : MonoBehaviour
         {
             faceRight = false;
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && playerController.isGrounded)
         {
             if (GameManager.Instance.enoughMana(shadowBoltManaCost))
             {
@@ -55,15 +57,15 @@ public class PlayerAbilities : MonoBehaviour
                 gm.decreaseMana(teleportManaCost);
             }
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !isDashing && faceRight)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !isDashing && faceRight && playerController.isGrounded)
         {
             Debug.Log("Right Dash");
-            StartCoroutine(Dash(1f));
+            StartCoroutine(Roll(1f));
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !isDashing && !faceRight)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !isDashing && !faceRight && playerController.isGrounded)
         {
             Debug.Log("Left Dash");
-            StartCoroutine(Dash(-1f));
+            StartCoroutine(Roll(-1f));
         }
     }
 
@@ -98,19 +100,15 @@ public class PlayerAbilities : MonoBehaviour
         animator.SetBool("Shadowbolt", false);
     }
 
-    IEnumerator Dash(float direction)
+    IEnumerator Roll(float direction)
     {
         Debug.Log("Inside the Dash");
         isDashing = true;
-        //dashCount--;
-        //trail.emitting = true;
-        //dust.Play();
         rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0f);
         rigidbody2D.AddForce(new Vector2(dashDistance * direction, 0f), ForceMode2D.Impulse);
         float gravity = rigidbody2D.gravityScale;
         rigidbody2D.gravityScale = 0;
         yield return new WaitForSeconds(0.4f);
-        //trail.emitting = false;
         isDashing = false;
         rigidbody2D.gravityScale = gravity;
     }

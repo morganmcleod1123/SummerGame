@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
 
     public bool canMove = true;
-    private bool isGrounded;
+    public bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public int extraJumps;
     private int currentJumps;
 
+    private PlayerAbilities playerAbilities;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidbody2D;
     Animator animator;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
         currentJumps = extraJumps;
         rigidbody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerAbilities = GetComponent<PlayerAbilities>();
     }
 
     void Update()
@@ -69,21 +71,24 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        if (!playerAbilities.isDashing)
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-        moveInput = Input.GetAxisRaw("Horizontal");
-        if (canMove) { rigidbody2D.velocity = new Vector2(moveInput * moveSpeed, rigidbody2D.velocity.y); }
-        else
-        {
-            rigidbody2D.velocity = new Vector2(0, 0);
-        }
-        if (!facingRight && moveInput > 0 && canMove)
-        {
-            Flip();
-        }
-        else if (facingRight && moveInput < 0 && canMove)
-        {
-            Flip();
+            moveInput = Input.GetAxisRaw("Horizontal");
+            if (canMove) { rigidbody2D.velocity = new Vector2(moveInput * moveSpeed, rigidbody2D.velocity.y); }
+            else
+            {
+                rigidbody2D.velocity = new Vector2(0, 0);
+            }
+            if (!facingRight && moveInput > 0 && canMove)
+            {
+                Flip();
+            }
+            else if (facingRight && moveInput < 0 && canMove)
+            {
+                Flip();
+            }
         }
     }
 
