@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    internal PlayerManager playerManager;
+
     public float moveSpeed;
     private float moveInput;
 

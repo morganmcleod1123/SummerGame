@@ -5,6 +5,9 @@ using UnityEngine;
 // Implementation Tutorial https://youtu.be/1QfxdUpVh5I
 public class PlayerAttack : MonoBehaviour
 {
+    [SerializeField]
+    internal PlayerManager playerManager;
+
     private float timeBtwAttack;
     public float startTimeBtwAttack;
 

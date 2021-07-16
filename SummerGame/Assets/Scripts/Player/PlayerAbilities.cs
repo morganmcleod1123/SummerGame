@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerAbilities : MonoBehaviour
 {
+    [SerializeField]
+    internal PlayerManager playerManager;
+
     public GameObject projectile;
     public Vector2 velocity;
     public Vector2 offset = new Vector2(0.4f, 0.1f);
@@ -15,8 +18,7 @@ public class PlayerAbilities : MonoBehaviour
     public float teleportManaCost;
 
     public GameObject teleportPos;
-    private int dashCount;
-    public float dashDistance = 15f;
+    public float rollDistance = 15f;
     public bool isDashing;
 
     private PlayerController playerController;
@@ -105,7 +107,7 @@ public class PlayerAbilities : MonoBehaviour
         Debug.Log("Inside the Dash");
         isDashing = true;
         rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0f);
-        rigidbody2D.AddForce(new Vector2(dashDistance * direction, 0f), ForceMode2D.Impulse);
+        rigidbody2D.AddForce(new Vector2(rollDistance * direction, 0f), ForceMode2D.Impulse);
         float gravity = rigidbody2D.gravityScale;
         rigidbody2D.gravityScale = 0;
         yield return new WaitForSeconds(0.4f);

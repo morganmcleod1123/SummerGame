@@ -1,0 +1,1140 @@
+fileFormatVersion: 2
+guid: a0f4122880e690b40b2bbdcd541d8ed8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8377453574569964620
+    second: mc_damaged_left-Sheet_0
+  - first:
+      213: 3798815994870499204
+    second: mc_damaged_left-Sheet_1
+  - first:
+      213: 3260689418419318733
+    second: mc_damaged_left-Sheet_2
+  - first:
+      213: 2835778503400127870
+    second: mc_damaged_left-Sheet_3
+  - first:
+      213: 2935688413705332127
+    second: mc_damaged_left-Sheet_4
+  - first:
+      213: -7730916735710197724
+    second: mc_damaged_left-Sheet_5
+  - first:
+      213: 1906383785670830339
+    second: mc_damaged_left-Sheet_6
+  - first:
+      213: -186790361997090321
+    second: mc_damaged_left-Sheet_7
+  - first:
+      213: -2246336401482280976
+    second: mc_damaged_left-Sheet_8
+  - first:
+      213: -415884392560862648
+    second: mc_damaged_left-Sheet_9
+  - first:
+      213: 7234719771636539786
+    second: mc_damaged_left-Sheet_10
+  - first:
+      213: 1643233510674654648
+    second: mc_damaged_left-Sheet_11
+  - first:
+      213: -3684652081875867997
+    second: mc_damaged_left-Sheet_12
+  - first:
+      213: -5837592781802342678
+    second: mc_damaged_left-Sheet_13
+  - first:
+      213: -5842591875613122289
+    second: mc_damaged_left-Sheet_14
+  - first:
+      213: 412702633415025703
+    second: mc_damaged_left-Sheet_15
+  - first:
+      213: 6509656750691860058
+    second: mc_damaged_left-Sheet_16
+  - first:
+      213: 9083071159864110953
+    second: mc_damaged_left-Sheet_17
+  - first:
+      213: 4502128769019474710
+    second: mc_damaged_left-Sheet_18
+  - first:
+      213: -4370471623404754767
+    second: mc_damaged_left-Sheet_19
+  - first:
+      213: 8478319917150219258
+    second: mc_damaged_left-Sheet_20
+  - first:
+      213: -4422698561326776214
+    second: mc_damaged_left-Sheet_21
+  - first:
+      213: 2561576007335181892
+    second: mc_damaged_left-Sheet_22
+  - first:
+      213: 2601704248857773760
+    second: mc_damaged_left-Sheet_23
+  - first:
+      213: -4134899237641772838
+    second: mc_damaged_left-Sheet_24
+  - first:
+      213: 3889537851689177260
+    second: mc_damaged_left-Sheet_25
+  - first:
+      213: -3587305989184120471
+    second: mc_damaged_left-Sheet_26
+  - first:
+      213: 4413595028493601299
+    second: mc_damaged_left-Sheet_27
+  - first:
+      213: 764492236598803055
+    second: mc_damaged_left-Sheet_28
+  - first:
+      213: 5111730190572957206
+    second: mc_damaged_left-Sheet_29
+  - first:
+      213: 20431533899119814
+    second: mc_damaged_left-Sheet_30
+  - first:
+      213: 6529794705706424192
+    second: mc_damaged_left-Sheet_31
+  - first:
+      213: 5805432705617955534
+    second: mc_damaged_left-Sheet_32
+  - first:
+      213: -5138187593898724714
+    second: mc_damaged_left-Sheet_33
+  - first:
+      213: -4168330848863776602
+    second: mc_damaged_left-Sheet_34
+  - first:
+      213: 6696233348065897981
+    second: mc_damaged_left-Sheet_35
+  - first:
+      213: -2009705839418649370
+    second: mc_damaged_left-Sheet_36
+  - first:
+      213: 2702051462090115080
+    second: mc_damaged_left-Sheet_37
+  - first:
+      213: 6025143136034472237
+    second: mc_damaged_left-Sheet_38
+  - first:
+      213: 4530875543195127587
+    second: mc_damaged_left-Sheet_39
+  - first:
+      213: 3419319293884374537
+    second: mc_damaged_left-Sheet_40
+  - first:
+      213: -265882773294299882
+    second: mc_damaged_left-Sheet_41
+  - first:
+      213: -32382266247489158
+    second: mc_damaged_left-Sheet_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 438
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44b192f3a1b24470800000000000000
+      internalID: 8377453574569964620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 438
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4870455350b18b430800000000000000
+      internalID: 3798815994870499204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 438
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf22cb00cb404d20800000000000000
+      internalID: 3260689418419318733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 438
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d7ad43685ba5720800000000000000
+      internalID: 2835778503400127870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 438
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95e22eee09adb820800000000000000
+      internalID: 2935688413705332127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 438
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4280fd3603446b490800000000000000
+      internalID: -7730916735710197724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 438
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309697ed3f5d47a10800000000000000
+      internalID: 1906383785670830339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe162b9c723686df0800000000000000
+      internalID: -186790361997090321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 365
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff8e97c1f863d0e0800000000000000
+      internalID: -2246336401482280976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 365
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ad7c1395b7a3af0800000000000000
+      internalID: -415884392560862648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 365
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8124e51d43e66460800000000000000
+      internalID: 7234719771636539786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 365
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5e7c6fb20fdc610800000000000000
+      internalID: 1643233510674654648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 365
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6a2e2247c7ddcc0800000000000000
+      internalID: -3684652081875867997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 365
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae679493b44bcfea0800000000000000
+      internalID: -5837592781802342678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f012f7ef4a1faeea0800000000000000
+      internalID: -5842591875613122289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 292
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7242296cbd63ab500800000000000000
+      internalID: 412702633415025703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 292
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e36ba3352f65a50800000000000000
+      internalID: 6509656750691860058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 292
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fab41881d8d0e70800000000000000
+      internalID: 9083071159864110953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 292
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613f87a1346ca7e30800000000000000
+      internalID: 4502128769019474710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 292
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8e80ad637f853c0800000000000000
+      internalID: -4370471623404754767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 292
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbabd96b0b09a570800000000000000
+      internalID: 8478319917150219258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a608c77471b6f92c0800000000000000
+      internalID: -4422698561326776214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 219
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e706e8ecb8c8320800000000000000
+      internalID: 2561576007335181892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 219
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6cacbda3c1b1420800000000000000
+      internalID: 2601704248857773760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 219
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0245e0d03ed96c0800000000000000
+      internalID: -4134899237641772838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 219
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca09e56811a6af530800000000000000
+      internalID: 3889537851689177260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 219
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9699c0e8534573ec0800000000000000
+      internalID: -3587305989184120471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 219
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a8acf4b4d304d30800000000000000
+      internalID: 4413595028493601299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6af30483a50c9a00800000000000000
+      internalID: 764492236598803055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 146
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61eadb4768380f640800000000000000
+      internalID: 5111730190572957206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 146
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccf5403f56984000800000000000000
+      internalID: 20431533899119814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 146
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0879bd140bd7e9a50800000000000000
+      internalID: 6529794705706424192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 146
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca0bc9894a019050800000000000000
+      internalID: 5805432705617955534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 146
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692f85c4b9d71b8b0800000000000000
+      internalID: -5138187593898724714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 146
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a01c2f7d2d1726c0800000000000000
+      internalID: -4168330848863776602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfda79c70cccdec50800000000000000
+      internalID: 6696233348065897981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 73
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e45c6adf271c14e0800000000000000
+      internalID: -2009705839418649370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 73
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808c4ba1d7d9f7520800000000000000
+      internalID: 2702051462090115080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 73
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21c73872cb9d9350800000000000000
+      internalID: 6025143136034472237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 73
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f86a90d47e0ee30800000000000000
+      internalID: 4530875543195127587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 73
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e1e9d08ccd37f20800000000000000
+      internalID: 3419319293884374537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 73
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615c5e1c6056f4cf0800000000000000
+      internalID: -265882773294299882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_damaged_left-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79db4b1084fc8ff0800000000000000
+      internalID: -32382266247489158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
